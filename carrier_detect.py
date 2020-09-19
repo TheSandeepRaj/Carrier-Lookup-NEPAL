@@ -11,7 +11,6 @@ import re
 # +977-988******* SmartCell
 # 972 CDMA UTL 974/975	 CDMA	Sky SIM / Ntc CDMA
 # not_ToDo:   963 Hello Nepal GSM  not in operation
-# ToDo:  and whether the number is CDMA or GSM
 
 user_details = input("Hey! Enter the mobile number?\n")
 
