@@ -1,22 +1,18 @@
-import re
+# Nepal Telecom +977-98(4/5/6)*******
+# Ncell         +977-98(0/1/2)******* 
+# SmartCell     +977-9(61/62/88)*******  
+# UTL   	    +977-972*******  
+# Sky by NTC    +977-97(4/5)*******   CDMA 
+# TODO: input from file or type Option 
+# 
 
-# +977-985******* Nepal Telecom
-# +977-986******* Nepal Telecom
-# +977-984******* Nepal Telecom 
-# +977-980******* Ncell 
-# +977-981******* Ncell
-# +977-982******* Ncell
-# +977-961******* SmartCell 
-# +977-962******* SmartCell 
-# +977-988******* SmartCell
-# 972 CDMA UTL 974/975	 CDMA	Sky SIM / Ntc CDMA
-# not_ToDo:   963 Hello Nepal GSM  not in operation
+import re
 
 user_details = input("Hey! Enter the mobile number?\n")
 
 def carrier_detect(carrier):
     carrier = int(carrier)
-    if (carrier == 980) or (carrier == 981) or (carrier == 982) :       #ToDo 9801 &9820 are Pro others are Prepaid
+    if (carrier == 980) or (carrier == 981) or (carrier == 982) :       # TODO: 9801 &9820 are Pro others are Prepaid
         return 'Ncell', 'GSM'
 
     elif (carrier == 984) or (carrier == 986):
